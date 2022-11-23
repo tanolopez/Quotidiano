@@ -1,0 +1,102 @@
+<html class="main" lang="es">
+    <head>
+      <script src="https://kit.fontawesome.com/cfa73b018f.js" crossorigin="anonymous"></script>
+
+        <title>Sucursales</title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <header class="site-header">
+            <div class="site-identity">
+              <a href="index.html"><img src="./images/logo-blanco2.png" alt="Site Name" /></a>
+            </div>  
+            <nav class="site-navigation">
+              <ul class="nav">
+                <li><a href="menu.html">Menú</a></li> 
+                <li><a href="sucursales.html">Reservas</a></li> 
+                <li><a href="about.html">Chi siamo?</a></li> 
+              </ul>
+            </nav>
+            </head>
+          </header>
+<body>
+  <form class="reservatodo" action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">e-mail</label>
+      <input type="email" id="email" name="visitor_email" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Celular</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="+54 9 XX XXXX XXXX" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    
+    <div class="elem-group inlined">
+      <label for="adult">Adultos</label>
+      <input type="number"placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Ninos</label>
+      <input type="number"placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">Dia</label>
+      <input type="date"required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Horario</label>
+      <input type="time"required>
+    </div>
+    <div class="elem-group">
+      <label for="room-selection">Preferencia</label>
+      <select id="room-selection" name="room_preference" required>
+          <option value="connecting">Salon</option>
+          <option value="adjoining">Patio</option>
+          <option value="adjacent">Indistinto</option>
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="message">Algo en especial?</label>
+      <textarea id="message" name="visitor_message" placeholder="Cualquier anotacion que consideres importante" required></textarea>
+    </div>
+    <button type="submit">PRENOTA!</button>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+<footer class="footer">
+  <div class="social">
+    <a href="https://www.instagram.com/il_quotidiano/"> <i class="fa-brands fa-instagram fa-xl"></i>
+  </div>
+
+  <ul class="list">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="sucursales.html">Reservas</a>
+    </li>
+    <li>
+      <a href="menu.html">Menú</a>
+    </li>
+    <li>
+      <a href="about.html">Chi Siamo?</a>
+    </li>
+  </ul>
+  <p class="copyright">Il Quotidiano @ 2022</p>
+</footer> 
+</html>
